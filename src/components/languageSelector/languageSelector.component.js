@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { withTranslation } from 'react-i18next';
 
-import {Dropdown} from 'reactjs-dropdown-component';
+import Dropdown from 'react-dropdown';
 import './languageSelector.component.css';
 
 const languageKey = Object.freeze({
@@ -14,34 +14,44 @@ class LanguageSelector extends Component {
 		const {t} = this.props;
 		this.state = {
 			languages: [{
-					id: "en",
-					title: t(languageKey["en"]),
-					selected: true
+					value: "en",
+					label: t(languageKey["en"])
 				},
 				{
-					id: "kor",
-					title: t(languageKey["kor"]),
-					selected: false,
-					label: "English"
+					value: "kor",
+					label: t(languageKey["kor"])
 				}]
 		}
 	}
 
-	resetThenSet(id) {
+	// resetThenSet(id) {
+	// 	const {t} = this.props;
+	// 	let temp = [];
+	// 	this.props.i18n.changeLanguage(id);
+	// 	this.state.languages.forEach(item => temp.push({id: item.id, title: t(languageKey[item.id]), selected: (item.id == id ? true : false)}));
+	// 	this.setState({
+	// 		languages: temp
+	// 	});
+	// }
+	onChange(language) {
 		const {t} = this.props;
+		this.props.i18n.changeLanguage(language.value);
 		let temp = [];
-		this.props.i18n.changeLanguage(id);
-		this.state.languages.forEach(item => temp.push({id: item.id, title: t(languageKey[item.id]), selected: (item.id == id ? true : false)}));
+		this.state.languages.forEach((language) => { temp.push({value: language.value, label: t(languageKey[language.value])}); });
 		this.setState({
 			languages: temp
 		});
 	}
 	render() {
+		const {t} = this.props;
+		let defaultLanguage = null;
+		this.state.languages.forEach((language) => { if (language.value == this.props.i18n.language) defaultLanguage = language; });
 		return (
 			<Dropdown
-			  title="Select"
-			  list={this.state.languages}
-			  resetThenSet={this.resetThenSet.bind(this)}
+			  options={this.state.languages}
+			  onChange={this.onChange.bind(this)}
+			  value={defaultLanguage}
+			  placeholder={t("Select")}
 			/>
 		);
 	}

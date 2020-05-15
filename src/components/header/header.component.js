@@ -7,7 +7,7 @@ class Header extends Component {
     return (
       <div className="header" >
         <Logo />
-        <LanguageSelector />
+   		<LanguageSelector />     
       </div>
     );
   }

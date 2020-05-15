@@ -1,6 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+
+// External css
+import "react-datepicker/dist/react-datepicker.css";
+import 'react-dropdown/style.css'
+// External css
+
+
 import App from './App';
+
 import './index.css';
 
 import { Provider } from 'react-redux'

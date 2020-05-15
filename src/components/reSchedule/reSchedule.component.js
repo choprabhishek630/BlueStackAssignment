@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { withTranslation } from 'react-i18next';
 import Modal from "./../../utilityComponents/modal/modal.component";
 import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+
 import Symbol from './../symbol/symbol.component';
 
 import './reSchedule.component.css';
