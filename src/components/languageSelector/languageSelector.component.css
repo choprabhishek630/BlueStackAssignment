@@ -1,0 +1,35 @@
+.dd-wrapper {
+	width: auto;
+}
+
+.dd-wrapper .dd-header span {
+	display: none;
+}
+
+.dd-wrapper .dd-header-title {
+	margin: 0 0;
+	margin-right: 0;
+	font-weight: normal;
+	font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #556789;
+}
+
+.dd-wrapper .dd-header {
+	padding: 0.5rem 2rem;
+	padding-right: 3rem;
+	position: relative;
+	outline: none;
+}
+
+.dd-wrapper .dd-header::after {
+	content: "";
+	position: absolute;
+	right: 1rem;
+	top: 50%;
+	transform: translateY(-25%);
+	border-top: 0.5rem solid #556789;
+	border-bottom: 0.5rem solid transparent;
+	border-left: 0.5rem solid transparent;
+	border-right: 0.5rem solid transparent;
+}

@@ -1,0 +1,45 @@
+.pricing {
+	width: 36rem;
+	margin-top: 3rem;
+	margin-bottom: 2.2rem;
+	max-width: 100%;
+}
+
+.pricing-header {
+
+	font-weight: bold;
+	font-size: 2.4rem;
+	line-height: 3.2rem;
+	/* identical to box height, or 133% */
+
+
+	color: #2B416C;
+	margin-bottom: 1.7rem;
+}
+
+.pricing-row {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.pricing-row .period {
+	font-weight: normal;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	/* identical to box height, or 150% */
+
+
+	color: #7788A3;
+}
+
+.pricing-row .price {
+	font-weight: bold;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	/* identical to box height, or 150% */
+
+	color: #556789;
+}

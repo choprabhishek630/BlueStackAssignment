@@ -1,0 +1,69 @@
+.campaign-view {
+	display: flex;
+	flex-direction: row;
+}
+
+.campaign-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-left: 1.4rem;
+}
+
+.campaign-info .name {
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	color: #556789;
+}
+
+.campaign-info .region {
+	font-style: italic;
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+
+	color: #9CA2B7;
+}
+
+.campaign-view.large img {
+	width: 13.7rem;
+}
+
+.campaign-view.large .campaign-info .region {
+	font-style: normal;
+	margin-top: 1.4rem;
+}
+
+.campaign-view.large .campaign-info {
+	justify-content: flex-end;
+}
+
+.campaign-view.card-campaign-view {
+	flex-direction: column;
+}
+
+.campaign-view.card-campaign-view img {
+	width: 100%;
+}
+
+.campaign-view.card-campaign-view .campaign-info {
+	flex-direction: row;
+	margin-left: 0;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1.4rem;
+	margin-top: 1rem;
+}
+
+.campaign-view.card-campaign-view .campaign-info .name {
+	font-size: 2.6rem;
+	line-height: 3.2rem;
+}
+
+.campaign-view.card-campaign-view .campaign-info .region {
+	font-size: 2.2rem;
+	line-height: 2.8rem;
+}
+
+
+

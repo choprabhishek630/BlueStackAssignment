@@ -1,0 +1,15 @@
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.react-datepicker__input-container input, .input {
+  padding: 1rem;
+  font-size: larger;
+  outline: none !important;
+  width: calc(100% - 2rem);
+}

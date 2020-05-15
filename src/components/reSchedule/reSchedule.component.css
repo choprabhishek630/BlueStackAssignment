@@ -1,0 +1,14 @@
+.date-picker-container {
+	display: flex;
+	flex-direction: column;
+	min-width: 20rem;
+	width: 36rem;
+	margin-bottom: 2.2rem;
+}
+
+.date-picker-container label {
+	font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #7788A3;
+    margin-bottom: 1.4rem;
+}

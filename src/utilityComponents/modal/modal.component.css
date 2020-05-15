@@ -1,0 +1,71 @@
+.modal-container {
+  padding: 0;
+  margin: 0;
+}
+
+.trigger {
+  padding: 0;
+  margin: 0;
+}
+
+.modal-hide {
+  width: 0;
+  height: 0;
+}
+
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  z-index: 2001;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2000;
+  width: 100vw;
+  height: 100vh;
+  transition: background 1s;
+}
+
+.content {
+  padding: 1.3rem 2rem;
+}
+
+.actions {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.btn {
+  border: 2px solid #181B34;
+  box-sizing: border-box;
+  padding: 1.4rem 2.2rem;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #181B34;
+  cursor: pointer;
+
+  outline: none;
+  margin-left: 2rem;
+}
+
+.btn:first-child {
+  margin-left: 0;
+}
+
+.btn.submit-btn {
+  background: #181B34;
+  color: #ffffff;
+}
+
